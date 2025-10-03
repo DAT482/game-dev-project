@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "pngtree-simple-dark-red-solid-color-wallpaper-image_396557",
+    "texture": "acb3e99b-c39b-41c4-8607-ab03ef84a0e1",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      289,
+      405
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      289,
+      405
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

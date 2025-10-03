@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "7-hinh-nen-dien-thoai-mau-xanh-la-cay-inkythuatso-17-15-23-43",
+    "texture": "c452592a-743e-470e-8f10-772d7c64e924",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      450,
+      800
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      450,
+      800
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "usa",
+    "texture": "b3da38bf-a0f6-4724-95e7-0c572991f2e7",
+    "atlas": "",
+    "rect": [
+      72,
+      86,
+      460,
+      440
+    ],
+    "offset": [
+      -2.5,
+      0
+    ],
+    "originalSize": [
+      609,
+      612
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

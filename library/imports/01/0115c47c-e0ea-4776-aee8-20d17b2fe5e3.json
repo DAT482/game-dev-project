@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "vn-Photoroom",
+    "texture": "1b5d317b-03eb-4764-874e-c3f4a214fe77",
+    "atlas": "",
+    "rect": [
+      34,
+      34,
+      292,
+      291
+    ],
+    "offset": [
+      0,
+      0.5
+    ],
+    "originalSize": [
+      360,
+      360
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}
