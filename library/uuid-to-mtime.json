@@ -1150,8 +1150,8 @@
     "relativePath": "framework\\wxsdk\\sdk.ts"
   },
   "b081b4f8-d34d-4c06-80f9-fa5b0f8e3c39": {
-    "asset": 1759474753171,
-    "meta": 1759477632960,
+    "asset": 1759483634383,
+    "meta": 1759484439329,
     "relativePath": "Game"
   },
   "73121f54-af41-448a-b93b-9adc0913886e": {
@@ -1185,8 +1185,8 @@
     "relativePath": "Game\\Animations\\logoanim.anim"
   },
   "a67f4e3d-a472-4011-9295-8c6270f9e7d6": {
-    "asset": 1759474752823,
-    "meta": 1759477632961,
+    "asset": 1759483406862,
+    "meta": 1759484439499,
     "relativePath": "Game\\Fonts"
   },
   "8a4761d4-44df-4c3d-9d2a-33e5edd7d5e8": {
@@ -1210,8 +1210,8 @@
     "relativePath": "Game\\level.json"
   },
   "a10835ba-ff93-41b0-9d9e-af4a37fd50d5": {
-    "asset": 1759429131287,
-    "meta": 1759429131299,
+    "asset": 1759483634383,
+    "meta": 1759484439635,
     "relativePath": "Game\\Main.fire"
   },
   "209a1bf7-4ab8-4cd5-a129-d78d9e26a3e4": {
@@ -1395,8 +1395,8 @@
     "relativePath": "Game\\Scripts\\Info.ts"
   },
   "ef8004c1-ae03-46d2-8c50-7dee89f9494d": {
-    "asset": 1759474753115,
-    "meta": 1759477633000,
+    "asset": 1759483351413,
+    "meta": 1759484439524,
     "relativePath": "Game\\Scripts\\ui"
   },
   "d3b8f328-7560-4f9a-8bea-4ee71ba66e42": {
@@ -1510,13 +1510,13 @@
     "relativePath": "migration\\use_v2.0.x_cc.Toggle_event.js"
   },
   "282ca0e9-5796-48dc-a62f-21e6afba3f43": {
-    "asset": 1759474753866,
-    "meta": 1759477632961,
+    "asset": 1759477829240,
+    "meta": 1759484439336,
     "relativePath": "resources"
   },
   "2b08bffe-3b60-4857-ab6a-0cf1a9973ea0": {
-    "asset": 1759474753773,
-    "meta": 1759477632980,
+    "asset": 1759483350926,
+    "meta": 1759484439501,
     "relativePath": "resources\\Game"
   },
   "22b91f55-f794-428d-8fa9-58ae96fb2e1c": {
@@ -1715,8 +1715,8 @@
     "relativePath": "resources\\wechat"
   },
   "a2dcb37e-b3fe-40ee-a853-b8f03f7240cf": {
-    "asset": 1759482565651,
-    "meta": 1759482565672,
+    "asset": 1759484635126,
+    "meta": 1759484635140,
     "relativePath": "resources\\Game\\WinDialog.prefab"
   },
   "d3348e48-c708-4d6b-9605-7b6fc6dc1e3e": {
@@ -2135,18 +2135,18 @@
     "relativePath": "Game\\Scripts\\ui\\GameOver.ts"
   },
   "19f24c00-8ccc-4100-a9f5-7113e8039944": {
-    "asset": 1759251346848,
-    "meta": 1759251350237,
+    "asset": 1759483351095,
+    "meta": 1759484439538,
     "relativePath": "Game\\Scripts\\ui\\popup_GameOver.ts"
   },
   "dc6b6ca1-c3b4-4c8f-87cd-fd2a3af1c8bc": {
-    "asset": 1759313406129,
-    "meta": 1759313406146,
+    "asset": 1759483350569,
+    "meta": 1759484439635,
     "relativePath": "resources\\Game\\popup_GameOver.prefab"
   },
   "bbead26a-b731-43ea-84f0-b55922b0df63": {
-    "asset": 1759252820195,
-    "meta": 1759252825330,
+    "asset": 1759483351413,
+    "meta": 1759484439565,
     "relativePath": "Game\\Scripts\\ui\\WeChatDialog.ts"
   },
   "fe265aca-9150-45ce-8a9f-dd5edcd1a794": {
@@ -2206,67 +2206,17 @@
   },
   "52606737-ea8c-4749-a2b4-1420e3c8491f": {
     "asset": 1759480652720,
-    "meta": 1759480681621,
+    "meta": 1759484439524,
     "relativePath": "Game\\Scripts\\i18n.ts"
   },
   "7d78fd25-53e5-4e5b-bae7-72c49f802e6c": {
-    "asset": 1759481632840,
-    "meta": 1759481636584,
+    "asset": 1759483193459,
+    "meta": 1759484439619,
     "relativePath": "Game\\Scripts\\ui\\WinDialog.ts"
   },
   "8fc52cd5-6aad-4556-b138-fff5ef33378a": {
-    "asset": 1759481746166,
-    "meta": 1759481749745,
+    "asset": 1759483242422,
+    "meta": 1759484439497,
     "relativePath": "framework\\Platform.ts"
-  },
-  "74d14420-a3bd-4865-8d8d-3d4c4384452c": {
-    "asset": 1759482045679,
-    "meta": 1759482110319,
-    "relativePath": "Game\\Fonts\\TimeNewRoman.fnt"
-  },
-  "8e8c5262-ff93-4026-9839-176959603d70": {
-    "asset": 1759482493137,
-    "meta": 1759482515406,
-    "relativePath": "Game\\Fonts\\b.fnt"
-  },
-  "dd3207a9-17bc-4349-8a18-e6205e653078": {
-    "asset": 1759482493139,
-    "meta": 1759482547819,
-    "relativePath": "Game\\Fonts\\b_0.tga"
-  },
-  "7a1dfbfa-f045-4d1a-86f0-26b642615ba1": {
-    "asset": 1759482629538,
-    "meta": 1759482654130,
-    "relativePath": "Game\\Fonts\\text.fnt"
-  },
-  "507503a5-04da-4d42-8cc2-c97656b1de34": {
-    "asset": 1759482629544,
-    "meta": 1759482654119,
-    "relativePath": "Game\\Fonts\\text_0.png"
-  },
-  "bb9ccfc3-918d-40e0-8072-eddb78fea066": {
-    "asset": 1759482930886,
-    "meta": 1759482971792,
-    "relativePath": "Game\\Fonts\\a.fnt"
-  },
-  "5644945b-f49e-442d-85a7-29d905fdb174": {
-    "asset": 1759482930894,
-    "meta": 1759482971775,
-    "relativePath": "Game\\Fonts\\a_1.png"
-  },
-  "5b9c6171-22e0-445c-986e-701cff22f652": {
-    "asset": 1759482930900,
-    "meta": 1759482971778,
-    "relativePath": "Game\\Fonts\\a_2.png"
-  },
-  "a223cfc6-4c08-4330-8264-347020937ffb": {
-    "asset": 1759482930890,
-    "meta": 1759482971779,
-    "relativePath": "Game\\Fonts\\a_0.png"
-  },
-  "bda71c7f-0bc8-471e-a045-775b88ccbfd0": {
-    "asset": 1759482930904,
-    "meta": 1759482971787,
-    "relativePath": "Game\\Fonts\\a_3.png"
   }
 }

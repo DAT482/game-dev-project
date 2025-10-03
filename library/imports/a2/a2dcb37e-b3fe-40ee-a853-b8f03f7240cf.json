@@ -621,8 +621,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 51.25,
-      "height": 32
+      "width": 64.49,
+      "height": 40.32
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -679,10 +679,8 @@
     "_fontSize": 40,
     "_lineHeight": 32,
     "_enableWrapText": true,
-    "_N$file": {
-      "__uuid__": "da59841a-bae9-4bed-a708-8e415332be69"
-    },
-    "_isSystemFontUsed": false,
+    "_N$file": null,
+    "_isSystemFontUsed": true,
     "_spacingX": 0,
     "_batchAsBitmap": false,
     "_styleFlags": 0,
@@ -732,8 +730,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 61.25,
-      "height": 32
+      "width": 80.06,
+      "height": 40.32
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -790,10 +788,8 @@
     "_fontSize": 40,
     "_lineHeight": 32,
     "_enableWrapText": true,
-    "_N$file": {
-      "__uuid__": "da59841a-bae9-4bed-a708-8e415332be69"
-    },
-    "_isSystemFontUsed": false,
+    "_N$file": null,
+    "_isSystemFontUsed": true,
     "_spacingX": 0,
     "_batchAsBitmap": false,
     "_styleFlags": 0,
@@ -1643,8 +1639,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 37.5,
-      "height": 32
+      "width": 44.49,
+      "height": 40.32
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -1701,10 +1697,8 @@
     "_fontSize": 40,
     "_lineHeight": 32,
     "_enableWrapText": true,
-    "_N$file": {
-      "__uuid__": "da59841a-bae9-4bed-a708-8e415332be69"
-    },
-    "_isSystemFontUsed": false,
+    "_N$file": null,
+    "_isSystemFontUsed": true,
     "_spacingX": 0,
     "_batchAsBitmap": false,
     "_styleFlags": 0,
@@ -2011,9 +2005,7 @@
     "_fontSize": 40,
     "_lineHeight": 32,
     "_enableWrapText": true,
-    "_N$file": {
-      "__uuid__": "8e8c5262-ff93-4026-9839-176959603d70"
-    },
+    "_N$file": null,
     "_isSystemFontUsed": false,
     "_spacingX": 0,
     "_batchAsBitmap": false,
@@ -2259,8 +2251,8 @@
     "target": {
       "__id__": 1
     },
-    "component": "WinDialog",
-    "_componentId": "",
+    "component": "",
+    "_componentId": "7d78f0lU+VOW7rncsSfgC5s",
     "handler": "click_home",
     "customEventData": ""
   },
