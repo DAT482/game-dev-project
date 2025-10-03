@@ -443,7 +443,7 @@ static _addRankItem(content, item, rank, height, highlight) {
 
     // Highlight current user
     if (highlight) {
-        label.node.color = cc.Color.YELLOW;
+        label.node.color = cc.Color.GRAY;
     }
     else{
         label.node.color = new cc.Color(128, 0, 128);

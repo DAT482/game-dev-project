@@ -2,65 +2,88 @@ import { UserInfo, ChoiceType } from "../Info";
 import Platform from "../../../framework/Platform";
 import ViewManager from "../../../framework/plugin_boosts/ui/ViewManager";
 import Consts from "../hex-lines-game/Consts";
+import { t, setLang, getLang } from "../i18n";
 
-const {ccclass, property} = cc._decorator;
+const { ccclass, property } = cc._decorator;
 
 @ccclass
 export default class WinDialog extends cc.Component {
 
 
     @property(cc.ParticleSystem)
-    ps:cc.ParticleSystem = null;
+    ps: cc.ParticleSystem = null;
 
     @property(cc.Label)
-    levelLabel:cc.Label = null;
+    levelLabel: cc.Label = null;
 
     @property(cc.Label)
-    stepLabel:cc.Label = null;
+    stepLabel: cc.Label = null;
 
     @property(cc.Label)
-    timeLabel:cc.Label = null;
+    timeLabel: cc.Label = null;
 
     @property(cc.Label)
-    percentLabel:cc.Label = null;
+    percentLabel: cc.Label = null;
 
     @property(cc.Label)
-    diamondLabel:cc.Label = null;
+    diamondLabel: cc.Label = null;
 
     @property(cc.Node)
-    diamondNode:cc.Node = null;
+    diamondNode: cc.Node = null;
 
 
-    onLoad () {}
-    start () {}
+    onLoad() { }
+    start() { }
+    protected onEnable(): void {
 
-    onShown()
-    {
+
+    }
+
+    onShown() {
         this.ps.resetSystem();
         Platform.showSmallRank();
+        let string: String = "";
+        string = `${t("level")} %s`;
+        this.node.getChildByName("frame3").getChildByName("labelfullMessage").getComponent(cc.Label).string = t("titleWin");
+        this.node.getChildByName("frame3").getChildByName("labelStep").getComponent(cc.Label).string = t("step");
+        this.node.getChildByName("banner").getChildByName("New Label").getComponent(cc.Label).string = t("completed");
+        this.node.getChildByName("btn3").getChildByName("New Label").getComponent(cc.Label).string = t("continue");
+        this.node.getChildByName("btn2").getChildByName("New Label").getComponent(cc.Label).string = t("skin");
+        this.node.getChildByName("btn1").getChildByName("New Label").getComponent(cc.Label).string = t("challenge");
+        this.node.getChildByName("frame3").getChildByName("labelDiamond").getComponent(cc.Label).string = t("reward");
 
-        this.levelLabel.string = cc.js.formatStr("- 第 %s 关 - " , UserInfo.currentLevel)
+
+        this.node.getChildByName("frame3").getChildByName("labelCompliment").getComponent(cc.Label).string = t("compiment");
+        this.node.getChildByName("frame3").getChildByName("radius_rect").getChildByName("New Label").getComponent(cc.Label).string = t("rank_button");
+
+
+
+
+
+
+
+
+
+        this.levelLabel.string = cc.js.formatStr(string, UserInfo.currentLevel)
         this.stepLabel.string = UserInfo.stepUsed.toString()
-        this.timeLabel.string = UserInfo.timePassed.toString() +"s";
-        let p = g.decreaseFomula(0.99,0.3,UserInfo.timePassed + UserInfo.stepUsed,UserInfo.currentLevel + 50 )
-        this.percentLabel.string = (p* 100 ).toFixed(0) +"%"
+        this.timeLabel.string = UserInfo.timePassed.toString() + "s";
+        let p = g.decreaseFomula(0.99, 0.3, UserInfo.timePassed + UserInfo.stepUsed, UserInfo.currentLevel + 50)
+        this.percentLabel.string = (p * 100).toFixed(0) + "%"
 
         this.diamondNode.active = false
-        
-        if(UserInfo.level == UserInfo.currentLevel)
-        {
+
+        if (UserInfo.level == UserInfo.currentLevel) {
             let lv = UserInfo.level
             let choise = UserInfo.getChoice(ChoiceType.Levelup);
-            if(choise > 0 && Math.random() > 0.5 && lv >= 3)
-            {
-                this.scheduleOnce(_=>{
-                    ViewManager.instance.show("Game/LevelupDialog",lv,p)
-                },1)
+            if (choise > 0 && Math.random() > 0.5 && lv >= 3) {
+                this.scheduleOnce(_ => {
+                    ViewManager.instance.show("Game/LevelupDialog", lv, p)
+                }, 1)
                 this.diamondNode.active = false
-            }else{
+            } else {
                 this.diamondNode.active = true;
-                p = Math.min(p,1);
-                let diamond = Math.floor(Math.max(30 * p,10))
+                p = Math.min(p, 1);
+                let diamond = Math.floor(Math.max(30 * p, 10))
                 this.diamondLabel.string = diamond.toString();
                 UserInfo.addDiamond(diamond);
             }
@@ -69,41 +92,33 @@ export default class WinDialog extends cc.Component {
             UserInfo.save();
         }
         let choise = UserInfo.getChoice(ChoiceType.HB);
-        if(choise == 1)
-        {
-            if(UserInfo.level >= 3)
-            {
-                if(!UserInfo.isUnlock(Consts.FreeSkinId))
-                {
+        if (choise == 1) {
+            if (UserInfo.level >= 3) {
+                if (!UserInfo.isUnlock(Consts.FreeSkinId)) {
                     ViewManager.instance.show("Game/HbDialog")
                 }
             }
         }
     }
 
-    click_rank()
-    {
+    click_rank() {
         ViewManager.instance.show("wechat/WxRankDialog")
     }
 
-    click_shop()
-    {
+    click_shop() {
         ViewManager.instance.show("Game/ShopDialog");
     }
 
-    click_next()
-    {
-        UserInfo.currentLevel = UserInfo.currentLevel +1;
+    click_next() {
+        UserInfo.currentLevel = UserInfo.currentLevel + 1;
         cc.director.loadScene("Game")
     }
 
-    click_home()
-    {
+    click_home() {
         cc.director.loadScene("Main")
     }
 
-    click_share()
-    {
+    click_share() {
         Platform.share();
     }
 }

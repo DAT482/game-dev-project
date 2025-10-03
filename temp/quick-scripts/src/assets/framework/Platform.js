@@ -449,7 +449,7 @@ var Platform = /** @class */ (function () {
         label.overflow = cc.Label.Overflow.CLAMP;
         // Highlight current user
         if (highlight) {
-            label.node.color = cc.Color.YELLOW;
+            label.node.color = cc.Color.GRAY;
         }
         else {
             label.node.color = new cc.Color(128, 0, 128);

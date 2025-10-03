@@ -26,7 +26,11 @@ exports.LANGS = {
         luckydraw: "Lucky Draw",
         game_status: "Game Over",
         introduce: "Connect 2 identical animals",
-        close_introduce: "Tap anywhere to close"
+        close_introduce: "Tap anywhere to close",
+        titleWin: "Time        Beat         players",
+        completed: "Congratulations on completing the level!",
+        reward: "Reward for this level:",
+        compiment: "Excellent!"
     },
     vi: {
         skin: "Trang phục",
@@ -49,7 +53,11 @@ exports.LANGS = {
         continue: "Tiếp tục",
         luckydraw: "Vòng quay may mắn",
         introduce: "Kết nối 2 con vật giống nhau",
-        close_introduce: "Nhấn vào bất kỳ chỗ nào để đóng"
+        close_introduce: "Nhấn vào bất kỳ chỗ nào để đóng",
+        titleWin: "Thời gian        Vượt qua         người chơi",
+        completed: "Chúc mừng bạn đã qua màn!",
+        reward: "Phần thưởng màn này:",
+        compiment: "Quá xuất sắc!"
     }
 };
 var currentLang = localStorage.getItem("lang") || "en";

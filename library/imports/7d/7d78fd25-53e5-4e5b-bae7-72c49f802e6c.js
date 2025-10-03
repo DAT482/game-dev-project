@@ -7,6 +7,7 @@ var Info_1 = require("../Info");
 var Platform_1 = require("../../../framework/Platform");
 var ViewManager_1 = require("../../../framework/plugin_boosts/ui/ViewManager");
 var Consts_1 = require("../hex-lines-game/Consts");
+var i18n_1 = require("../i18n");
 var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
 var WinDialog = /** @class */ (function (_super) {
     __extends(WinDialog, _super);
@@ -23,10 +24,23 @@ var WinDialog = /** @class */ (function (_super) {
     }
     WinDialog.prototype.onLoad = function () { };
     WinDialog.prototype.start = function () { };
+    WinDialog.prototype.onEnable = function () {
+    };
     WinDialog.prototype.onShown = function () {
         this.ps.resetSystem();
         Platform_1.default.showSmallRank();
-        this.levelLabel.string = cc.js.formatStr("- 第 %s 关 - ", Info_1.UserInfo.currentLevel);
+        var string = "";
+        string = i18n_1.t("level") + " %s";
+        this.node.getChildByName("frame3").getChildByName("labelfullMessage").getComponent(cc.Label).string = i18n_1.t("titleWin");
+        this.node.getChildByName("frame3").getChildByName("labelStep").getComponent(cc.Label).string = i18n_1.t("step");
+        this.node.getChildByName("banner").getChildByName("New Label").getComponent(cc.Label).string = i18n_1.t("completed");
+        this.node.getChildByName("btn3").getChildByName("New Label").getComponent(cc.Label).string = i18n_1.t("continue");
+        this.node.getChildByName("btn2").getChildByName("New Label").getComponent(cc.Label).string = i18n_1.t("skin");
+        this.node.getChildByName("btn1").getChildByName("New Label").getComponent(cc.Label).string = i18n_1.t("challenge");
+        this.node.getChildByName("frame3").getChildByName("labelDiamond").getComponent(cc.Label).string = i18n_1.t("reward");
+        this.node.getChildByName("frame3").getChildByName("labelCompliment").getComponent(cc.Label).string = i18n_1.t("compiment");
+        this.node.getChildByName("frame3").getChildByName("radius_rect").getChildByName("New Label").getComponent(cc.Label).string = i18n_1.t("rank_button");
+        this.levelLabel.string = cc.js.formatStr(string, Info_1.UserInfo.currentLevel);
         this.stepLabel.string = Info_1.UserInfo.stepUsed.toString();
         this.timeLabel.string = Info_1.UserInfo.timePassed.toString() + "s";
         var p = g.decreaseFomula(0.99, 0.3, Info_1.UserInfo.timePassed + Info_1.UserInfo.stepUsed, Info_1.UserInfo.currentLevel + 50);
